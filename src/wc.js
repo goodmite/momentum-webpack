@@ -33,11 +33,11 @@ export class ImiEngage extends HTMLElement {
 <style>
 md-menu-overlay::part(overlay-content){
         height: 360px !important;
-        width: 360px !important;
+        overflow-y: visible;
     }
 </style>
     <md-theme>
-    <md-menu-overlay size="large" placement="top-start">
+    <md-menu-overlay size="large" placement="top-start" custom-width="400px">
         <md-tooltip slot="menu-trigger" placement="right">
             <md-button
                     hasRemoveStyle
@@ -49,7 +49,7 @@ md-menu-overlay::part(overlay-content){
             </md-button>
             <!— Use your md-tabs component here —>
         </md-tooltip>
-        <div style="max-width: 100%;">
+        <div style="max-width: 100%;width: 400px;">
             <md-tabs selected="1">
             
                 
